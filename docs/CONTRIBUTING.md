@@ -2,7 +2,7 @@
 
 ## Project overview
 
-- Vidur is first ever open-source recruiting OS. This project built to be go to solution for all the hiring needs for any organisation that believes in open-source.
+- Vidur is a recruiting OS. This project built to be go to solution for all the hiring needs for any organisation.
 - This project aims towards providing a first-class integration with ProfileCity (prev. The Nirvana Labs) APIs (yet to go public) to provide AI features.
 
 ## Tech Stack
