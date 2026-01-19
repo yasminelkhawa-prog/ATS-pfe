@@ -45,7 +45,7 @@ const step3Completed = async (savedOrgName: string) => {
   <OnboardingKeyInput v-if="currentStep == 0" @done="step0Completed" />
   <main v-else>
     <div class="justify-center flex mt-12">
-      <img src="/vidur-logo.svg" class="h-8" />
+      <img src="/vidur-small.svg" class="h-8" />
     </div>
     <h4 class="text-sm text-zinc-600 mt-2 mb-6 text-center">The only recruiting software you will ever need.</h4>
     <section class="w-full mt-12">
