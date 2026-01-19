@@ -32,7 +32,7 @@ const verify = async () => {
   <section class="flex items-center justify-center min-h-screen">
     <div class="max-w-sm mx-auto w-full text-center">
       <div class="justify-center flex">
-        <img src="/vidur-logo.svg" class="h-5" />
+        <img src="/vidur-small.svg" class="h-5" />
       </div>
       <h4 class="text-md text-zinc-600 mt-2 mb-6">The only recruiting software you will ever need.</h4>
       <!-- Form -->
