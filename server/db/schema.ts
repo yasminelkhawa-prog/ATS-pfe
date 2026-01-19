@@ -14,7 +14,7 @@ import {
   pgEnum,
   json,
 } from 'drizzle-orm/pg-core';
-import { employmentTypeIds } from '../../shared/employment-types';
+import { employmentTypeIds } from '../../shared/EmploymentTypes';
 import type { PostalAddressList, Salary } from '../../shared/types/posting-types';
 
 const defaultUuidPkField = () =>
