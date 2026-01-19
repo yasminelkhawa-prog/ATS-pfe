@@ -77,8 +77,8 @@ export default defineNuxtConfig({
         region: '',
       },
     },
-    bypassAdmin: false, // THIS IS ONLY FOR DEMO INSTANCES / DEV MODE. NOT MEANT TO BE USED AS A FULL FEATURE.
-    delayResponse: false, // IT WILL ONLY TAKE EFFECT IN DEV MODE, USEFUL TO DO REALISTIC TESTING.
+    bypassAdmin: false,
+    delayResponse: false,
     remoteAssetBase: '/assets',
     public: {
       origin: 'http://localhost:3001',
@@ -90,4 +90,11 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: '2024-07-31',
+
+  // 👇 AJOUTEZ CECI JUSTE ICI :
+  vite: {
+    server: {
+      allowedHosts: ['ats-pfe.onrender.com']
+    }
+  }
 });
