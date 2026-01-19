@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { employmentTypeIds } from '../employment-types';
+import { employmentTypeIds } from '../Employment-Types';
 import { currencyCodes } from '../consts/currencies';
 import { salaryUnits } from '../consts/posting';
 
