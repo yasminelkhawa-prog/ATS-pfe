@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { CalendarDate } from '@internationalized/date';
 import { syncRef } from '@vueuse/core';
-import { employmentTypeIds, employmentTypes } from '~~/shared/employment-types';
+import { employmentTypeIds, employmentTypes } from '~~/shared/EmploymentTypes';
 import { createJobPostingSchema, updateJobPostingSchema } from '~~/shared/schemas/posting';
 import type { SelectableOption } from '~~/shared/types/general';
 
