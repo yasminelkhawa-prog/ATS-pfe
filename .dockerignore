@@ -1,0 +1,27 @@
+# ignore some file in order to increase build performance
+
+node_modules
+npm-debug.log
+.git
+.gitignore
+.env
+.env-example
+.nuxt
+docs
+.md
+.husky
+.prettierignore
+.prettierrc
+npm-debug.log
+.coverage
+.github
+CHANGELOG.md
+
+# IDE and OS files
+.idea
+.vscode
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist
