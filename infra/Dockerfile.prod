@@ -1,0 +1,29 @@
+ARG NODE_VERSION=22.7
+
+# Build stage
+FROM node:${NODE_VERSION}-slim AS build
+
+WORKDIR /build-space
+
+COPY ./package.json /build-space/
+COPY ./yarn.lock /build-space/
+
+RUN yarn install
+
+COPY . ./
+
+RUN yarn build
+
+# Production stage
+FROM node:${NODE_VERSION}-alpine
+WORKDIR /app
+
+COPY --from=build /build-space/.output ./
+
+ENV HOST=0.0.0.0
+ENV NODE_ENV=production
+ENV PORT=80
+
+EXPOSE 80
+
+CMD ["node", "/app/server/index.mjs"]
